@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Authentication</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Authentication</h1>
+    <div class="form-container" id="registerForm">
+      <h2>Register</h2>
+      <input type="text" id="registerUsername" placeholder="Username" required>
+      <input type="email" id="registerEmail" placeholder="Email" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <button onclick="register()">Register</button>
+    </div>
+
+    <div class="form-container" id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="loginUsername" placeholder="Username" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div class="form-container" id="forgotPasswordForm">
+      <h2>Forgot Password</h2>
+      <input type="email" id="forgotEmail" placeholder="Email" required>
+      <button onclick="forgotPassword()">Send Reset Link</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
